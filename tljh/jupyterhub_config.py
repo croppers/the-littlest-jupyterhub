@@ -31,6 +31,8 @@ c.SystemdSpawner.default_shell = '/bin/bash'
 # Drop the '-singleuser' suffix present in the default template
 c.SystemdSpawner.unit_name_template = 'jupyter-{USERNAME}'
 
+c.Spawner.default_url = '/lab'
+
 tljh_config = configurer.load_config()
 configurer.apply_config(tljh_config, c)
 
